@@ -5,6 +5,7 @@ RUN mkdir -p /templates && \
     go run main.go && \
     ls -la /templates
 
-FROM timoreymann/nginx-spa:4.1.1
+FROM timoreymann/nginx-spa:4.2.0
 WORKDIR /app
+COPY --chown=nonroot nginx/language_rewrite.conf /etc/nginx/conf.d/
 COPY --from=template --chown=nonroot /templates/index* .
