@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/timo-reymann/nereide/compare/1.0.0...1.1.0) (2023-10-03)
+
+
+### Features
+
+* Add index page based on locale ([32a0636](https://github.com/timo-reymann/nereide/commit/32a0636802e11923d391d56f5c7b51e4f5ab641e))
+
 ## 1.0.0 (2023-10-03)
 
 
