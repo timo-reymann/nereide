@@ -1,5 +1,8 @@
 name: Detect new releases and build docker image on new version
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
