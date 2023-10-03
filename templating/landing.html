@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="{{ .html_lang }}">
 <head>
-    <title>Wir sind gleich wieder da</title>
+    <title>{{ .title }}</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
@@ -189,10 +188,10 @@
                       d="M16.426 5.913L8.051 23h13l-6.875 12.384L26.75 46.259l-8.375-11.375L26.75 20H14.625l6.801-14.087zM68.551 49.62l-8.375-17.087h13l-6.875-12.384L78.875 9.274 70.5 20.649l8.375 14.884H66.75l6.801 14.087z"/>
             </svg>
         </div>
-        <h1 class="header">Wir sind gleich wieder für dich da!</h1>
+        <h1 class="header">{{ .header }}</h1>
         <div class="instructions">
-            <h2>Die Seite ist vorrübergehend nicht verfügbar.</h2>
-            <p>Du kannst ...</p>
+            <h2>{{ .subheader }}</h2>
+            <p>{{ .options_tease }} ...</p>
             <div class="step">
                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489.711 489.711">
                     <path
@@ -202,7 +201,7 @@
                             d="M462.456,195.511c-1.8-7.2-9.1-11.7-16.3-9.9c-7.2,1.8-11.7,9.1-9.9,16.3c16.9,69.6-5.6,142.7-58.7,190.7    c-37.3,33.7-84.1,50.3-130.7,50.3c-44.5,0-88.9-15.1-124.7-44.9l58.8-5.3c7.4-0.7,12.9-7.2,12.2-14.7s-7.2-12.9-14.7-12.2l-88.9,8    c-7.4,0.7-12.9,7.2-12.2,14.7l8,88.9c0.6,7,6.5,12.3,13.4,12.3c0.4,0,0.8,0,1.2-0.1c7.4-0.7,12.9-7.2,12.2-14.7l-4.8-54.1    c36.3,29.4,80.8,46.5,128.3,48.9c3.8,0.2,7.6,0.3,11.3,0.3c55.1,0,107.5-20.2,148.7-57.4    C456.056,357.911,481.656,274.811,462.456,195.511z">
                     </path>
                 </svg>
-                <p>... die Seite aktualisieren</p>
+                <p>... {{ .option_refresh }}</p>
             </div>
             <div class="step">
                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
@@ -213,12 +212,10 @@
                             d="M30,6c-0.552,0-1,0.447-1,1v23H14c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1V7C31,6.447,30.552,6,30,6z">
                     </path>
                 </svg>
-                <p>... später wieder kommen</p>
+                <p>... {{ .option_return }}</p>
             </div>
             </ul>
-            <p>wenn du lieber warten willst, lass diesen Tab einfach offen, wir aktualisieren für dich alle 5
-                Sekunden, du wirst auf die Seite geschickt, sobald wir wieder startklar sind!
-            </p>
+            <p>{{ .wait_text }}</p>
         </div>
 
     </div>
