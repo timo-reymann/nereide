@@ -45,6 +45,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: timoreymann/${{ env.DOCKER_REPO }}
           short-description: ${{ github.event.repository.description }}
+          enable-url-completion: true
       - name: Build and push image
         if: steps.semantic-release.outputs.new_release_published == 'true'
         uses: docker/build-push-action@v2
