@@ -1,0 +1,18 @@
+{
+  "html": {
+    "html_lang": "de",
+    "title": "Wir sind gleich wieder da",
+    "header": "Wir sind gleich wieder für dich da!",
+    "subheader": "Die Seite ist vorübergehend nicht verfügbar.",
+    "options_tease": "Du kannst",
+    "option_refresh": "die Seite aktualisieren",
+    "option_return": "später wieder kommen",
+    "wait_text": "wenn du lieber warten willst, lass diesen Tab einfach offen, wir aktualisieren für dich alle 5 Sekunden, du wirst auf die Seite geschickt, sobald wir wieder startklar sind!"
+  },
+  "json": {
+    "message": "Das ist jetzt etwas peinlich, aber hier solltest du jetzt eigentliche eine JSON-Response sehen. Leider ist der Dienst gerade offline, wir sind gleich zurück!"
+  },
+  "xml": {
+    "message": "Das ist jetzt etwas peinlich, aber hier solltest du jetzt eigentliche eine XML-Response sehen. Leider ist der Dienst gerade offline, wir sind gleich zurück!"
+  }
+}

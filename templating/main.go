@@ -2,43 +2,73 @@ package main
 
 import (
 	"github.com/timo-reymann/nereide/templating/util"
-	"html/template"
 	"os"
 	"strings"
+	"text/template"
 )
 
-const DefaultLanguage = "de"
-const TemplateFileRoot = "./templates"
-const RenderedTemplateFilesRoot = "/templates"
+const TemplateFileRoot = "./templates/"
+const RenderedTemplateFilesRoot = "/templates/"
+
+func createTemplate(fileName string) (*template.Template, error) {
+	content, err := os.ReadFile(TemplateFileRoot + fileName)
+	if err != nil {
+		return nil, err
+	}
+
+	tpl, err := template.New(fileName).Parse(string(content))
+	if err != nil {
+		panic(err)
+	}
+
+	return tpl, nil
+}
+
+func writeTemplate(tpl *template.Template, targetFileName string, data interface{}) error {
+	file, err := os.Create(RenderedTemplateFilesRoot + targetFileName)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	err = tpl.Execute(file, data)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func check(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
 
 func main() {
-	landingContent, err := os.ReadFile(TemplateFileRoot + "/landing.html")
-	if err != nil {
-		panic(err)
-	}
+	i18nMappings, err := util.ReadJSONFilesInFolder("i18n")
+	check(err)
 
-	i81nMappings, err := util.ReadJSONFilesInFolder("i18n")
-	if err != nil {
-		panic(err)
-	}
+	htmlTpl, err := createTemplate("index.html")
+	check(err)
 
-	t, err := template.New("landing").Parse(string(landingContent))
-	if err != nil {
-		panic(err)
-	}
+	xmlTpl, err := createTemplate("index.xml")
+	check(err)
 
-	for fileName, config := range i81nMappings {
+	jsonTpl, err := createTemplate("index.json")
+	check(err)
+
+	for fileName, config := range i18nMappings {
 		lang := strings.TrimSuffix(fileName, ".json")
-		file, err := os.Create(RenderedTemplateFilesRoot + "/index." + lang + ".html")
-		if err != nil {
-			panic(err)
-		}
-		defer file.Close()
 
-		err = t.ExecuteTemplate(file, "landing", config)
-		if err != nil {
-			panic(err)
-		}
+		err := writeTemplate(htmlTpl, "index."+lang+".html", config["html"])
+		check(err)
+
+		err = writeTemplate(xmlTpl, "index."+lang+".xml", config["xml"])
+		check(err)
+
+		err = writeTemplate(jsonTpl, "index."+lang+".json", config["json"])
+		check(err)
+
 	}
-
 }

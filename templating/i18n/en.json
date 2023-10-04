@@ -1,10 +1,18 @@
 {
-  "html_lang": "en",
-  "title": "We will be right back",
-  "header": "We will be back for you in a moment!",
-  "subheader": "The page is temporarily unavailable.",
-  "options_tease": "You can",
-  "option_refresh": "refresh the page",
-  "option_return": "come back later",
-  "wait_text": "if you'd rather wait, just leave this tab open, we'll refresh for you every 5 seconds, you'll be sent to the page as soon as we're ready to go again!"
+  "html": {
+    "html_lang": "en",
+    "title": "We will be right back",
+    "header": "We will be back for you in a moment!",
+    "subheader": "The page is temporarily unavailable.",
+    "options_tease": "You can",
+    "option_refresh": "refresh the page",
+    "option_return": "come back later",
+    "wait_text": "if you'd rather wait, just leave this tab open, we'll refresh for you every 5 seconds, you'll be sent to the page as soon as we're ready to go again!"
+  },
+  "json": {
+    "message": "Oh snap! Normally here should be a snappy JSON response. Unfortunately the service is currently not available. We will be back shortly!"
+  },
+  "xml": {
+    "message": "Oh snap! Normally here should be a snappy XML response. Unfortunately the service is currently not available. We will be back shortly!"
+  }
 }
