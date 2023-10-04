@@ -18,9 +18,9 @@ nereide
 
 ## Features
 
-- respond with 503 to all requests serving the HTML page
+- respond with 503 to all requests serving HTML, JSON or XML
 - i18n support
-- HTML page in `/pages/landing.<lang>.html` can be overwritten
+- Pages in `/pages/landing.{lang}.[html,json,xml]` can be overwritten
 
 ## Requirements
 
