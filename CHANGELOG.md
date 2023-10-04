@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/timo-reymann/nereide/compare/1.1.0...1.2.0) (2023-10-04)
+
+
+### Features
+
+* Add XML and JSON response support ([e2aee0d](https://github.com/timo-reymann/nereide/commit/e2aee0d6879b9ca8d563aa1e70ebbb9174e8f232))
+
 ## [1.1.0](https://github.com/timo-reymann/nereide/compare/1.0.0...1.1.0) (2023-10-03)
 
 
