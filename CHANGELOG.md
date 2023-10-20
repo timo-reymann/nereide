@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/timo-reymann/nereide/compare/1.2.0...1.3.0) (2023-10-20)
+
+
+### Features
+
+* Add oci labels ([25c595c](https://github.com/timo-reymann/nereide/commit/25c595cbb787418c9002fff9b177e9d355ab5d46))
+
 ## [1.2.0](https://github.com/timo-reymann/nereide/compare/1.1.0...1.2.0) (2023-10-04)
 
 
