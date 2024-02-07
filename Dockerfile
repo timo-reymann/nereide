@@ -1,4 +1,4 @@
-FROM golang:1.21-alpine as template
+FROM golang:1.22-alpine as template
 WORKDIR /templating
 COPY ./templating .
 RUN mkdir -p /templates && \
