@@ -5,7 +5,7 @@ RUN mkdir -p /templates && \
     go run main.go && \
     ls -la /templates
 
-FROM timoreymann/nginx-spa:4.3.3
+FROM timoreymann/nginx-spa:4.3.4
 LABEL org.opencontainers.image.title="nereide"
 LABEL org.opencontainers.image.description="Nereide is here to help you serve all unhandeled (frontend) requests by automatic routing in a mesh setup"
 LABEL org.opencontainers.image.ref.name="main"
