@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/timo-reymann/nereide/compare/1.3.2...1.3.3) (2024-06-09)
+
+
+### Bug Fixes
+
+* **deps:** update timoreymann/nginx-spa docker tag to v4.3.4 ([#14](https://github.com/timo-reymann/nereide/issues/14)) ([5e8c8ff](https://github.com/timo-reymann/nereide/commit/5e8c8ff711af0764f9bcddb670115ee6490add72))
+
 ## [1.3.2](https://github.com/timo-reymann/nereide/compare/1.3.1...1.3.2) (2024-01-30)
 
 
