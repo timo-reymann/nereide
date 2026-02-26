@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/timo-reymann/nereide/compare/1.4.0...1.5.0) (2026-02-26)
+
+### Features
+
+* Add notice ([df573af](https://github.com/timo-reymann/nereide/commit/df573af35c3f3291063524a5b8c04e979a4ba0e3))
+
 ## [1.4.0](https://github.com/timo-reymann/nereide/compare/1.3.3...1.4.0) (2025-09-20)
 
 ### Features
