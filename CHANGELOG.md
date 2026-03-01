@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/timo-reymann/nereide/compare/1.5.1...1.6.0) (2026-03-01)
+
+### Features
+
+* Add SBOM ([03daf97](https://github.com/timo-reymann/nereide/commit/03daf97ab2e03227a266ef04cfea6c8cf50a3885))
+
 ## [1.5.1](https://github.com/timo-reymann/nereide/compare/1.5.0...1.5.1) (2026-03-01)
 
 ### Bug Fixes
