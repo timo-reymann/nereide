@@ -1,3 +1,9 @@
+## [1.5.1](https://github.com/timo-reymann/nereide/compare/1.5.0...1.5.1) (2026-03-01)
+
+### Bug Fixes
+
+* Update LICENSE ([2c5deaf](https://github.com/timo-reymann/nereide/commit/2c5deafcd9ee6d5178a57530729cc759de926f8c))
+
 ## [1.5.0](https://github.com/timo-reymann/nereide/compare/1.4.0...1.5.0) (2026-02-26)
 
 ### Features
