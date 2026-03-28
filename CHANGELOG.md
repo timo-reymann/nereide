@@ -1,3 +1,9 @@
+## [1.6.1](https://github.com/timo-reymann/nereide/compare/1.6.0...1.6.1) (2026-03-28)
+
+### Bug Fixes
+
+* Optimize container layers ([ec98b9c](https://github.com/timo-reymann/nereide/commit/ec98b9cb02c64c78b05f56a92ce28f81ae98be00))
+
 ## [1.6.0](https://github.com/timo-reymann/nereide/compare/1.5.1...1.6.0) (2026-03-01)
 
 ### Features
