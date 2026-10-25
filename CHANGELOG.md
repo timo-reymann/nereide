@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/timo-reymann/nereide/compare/1.6.1...1.7.0) (2026-10-25)
+
+### Features
+
+* Add tag ranges ([e5d82ca](https://github.com/timo-reymann/nereide/commit/e5d82ca42d842449a0484fd621f1d6008f6323f3))
+
 ## [1.6.1](https://github.com/timo-reymann/nereide/compare/1.6.0...1.6.1) (2026-03-28)
 
 ### Bug Fixes
