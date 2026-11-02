@@ -1,3 +1,9 @@
+## [1.8.0](https://github.com/timo-reymann/nereide/compare/1.7.0...1.8.0) (2026-11-02)
+
+### Features
+
+* **deps:** update timoreymann/nginx-spa docker tag to v6.1.0 ([#29](https://github.com/timo-reymann/nereide/issues/29)) ([542a75e](https://github.com/timo-reymann/nereide/commit/542a75e655b1a2989867499c7b1e2a1844e15b3f))
+
 ## [1.7.0](https://github.com/timo-reymann/nereide/compare/1.6.1...1.7.0) (2026-10-25)
 
 ### Features
